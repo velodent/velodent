@@ -1,7 +1,7 @@
 # VeloDent
 
 <p align="center">
-  <img src="assets/image/logo.png" alt="VeloDent Logo" width="500">
+  <img src="docs/velodent-icon-1024.png" alt="VeloDent Logo" width="500">
 </p>
 
 <h1 align="center">VeloDent</h1>
