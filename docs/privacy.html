@@ -5,32 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - VeloDent</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; max-width: 800px; background-color: #ffffff; color: #333333; }
-        h1, h2 { color: #1a73e8; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; line-height: 1.6; max-width: 900px; color: #333; background-color: #f9f9f9; }
+        .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #070f1c; border-bottom: 2px solid #2f7fd0; padding-bottom: 10px; }
+        h2 { color: #2f7fd0; margin-top: 30px; }
+        p, li { font-size: 1.1rem; }
+        ul { padding-left: 20px; }
+        .highlight { background-color: #e8f0fe; padding: 15px; border-left: 5px solid #1a73e8; margin: 20px 0; }
+        footer { margin-top: 50px; font-size: 0.9rem; color: #666; border-top: 1px solid #ddd; padding-top: 20px; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy per VeloDent</h1>
-    <p><strong>Ultimo aggiornamento: 30 giugno 2026</strong></p>
-    
-    <p>VeloDent è un'applicazione desktop open source progettata per la gestione degli studi odontoiatrici.</p>
+    <div class="container">
+        <h1>Informativa sulla Privacy - VeloDent</h1>
+        <p><strong>Ultimo aggiornamento: 1 Luglio 2026</strong></p>
+        
+        <p>VeloDent è un software gestionale desktop "local-first" progettato per l'organizzazione e la gestione degli studi odontoiatrici. La privacy dei nostri utenti e dei loro pazienti è la nostra massima priorità.</p>
 
-    <h2>Trattamento dei dati e integrazione con i servizi Google</h2>
-    <p>Per offrire le sue funzionalità di automazione, l'applicazione richiede l'accesso a specifici servizi Google tramite protocollo OAuth2. VeloDent accesses esclusivamente ai seguenti permessi (Scope):</p>
-    <ul>
-        <li><strong>Google Calendar (https://www.googleapis.com/auth/calendar.events):</strong> Utilizzato esclusivamente per la lettura, creazione e sincronizzazione bidirezionale degli appuntamenti dell'agenda dello studio.</li>
-        <li><strong>Gmail (https://www.googleapis.com/auth/gmail.send):</strong> Utilizzato al solo scopo di inviare email di benvenuto e promemoria automatizzati ai pazienti dello studio.</li>
-    </ul>
+        <div class="highlight">
+            <strong>Nota Fondamentale:</strong> VeloDent non è un servizio cloud. Tutti i dati clinici, anagrafici e radiografici vengono memorizzati esclusivamente in locale sul computer dell'utente tramite database cifrato (SQLCipher). Nessun dato sensibile viene mai trasmesso ai server di VeloDent.
+        </div>
 
-    <h2>Archiviazione dei dati e Sicurezza</h2>
-    <p>L'applicazione opera principalmente in modalità locale. Tutti i dati scaricati, i token di autenticazione e le informazioni sincronizzate <strong>rimangono memorizzati esclusivamente sul computer dell'utente</strong>. Nessun dato viene trasmesso, memorizzato o condiviso con server di terze parti esterni a Google o al di fuori del controllo dell'utente stesso.</p>
+        <h2>1. Integrazione con i Servizi Google</h2>
+        <p>VeloDent offre un'integrazione facoltativa con Google Calendar per facilitare la gestione degli appuntamenti. Quando autorizzi VeloDent ad accedere al tuo account Google, l'applicazione utilizza le API di Google esclusivamente per le seguenti finalità:</p>
+        <ul>
+            <li><strong>Google Calendar (calendar.events):</strong> Lettura, creazione, modifica e cancellazione degli eventi del calendario. Questo permette la sincronizzazione bidirezionale degli appuntamenti di studio tra VeloDent e il tuo calendario personale/professionale.</li>
+        </ul>
 
-    <h2>Diritti dell'utente e revoca dei permessi</h2>
-    <p>L'utente mantiene il pieno controllo dei propri dati. È possibile revocare l'accesso dell'applicazione VeloDent ai servizi Google in qualsiasi momento visitando la pagina di gestione dei permessi del proprio account Google: <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a>.</p>
+        <h2>2. Utilizzo e Conservazione dei Dati Google</h2>
+        <p>VeloDent accede ai dati di Google Calendar solo in tempo reale durante le operazioni di sincronizzazione attivate dall'utente o dal sistema locale. 
+        I dati ottenuti (titolo appuntamento, orario) vengono memorizzati esclusivamente nel database locale dello studio per scopi operativi. <strong>VeloDent non condivide, non vende e non trasmette i dati del tuo account Google a terze parti o a server esterni.</strong></p>
 
-    <h2>Contatti</h2>
-    <p>Per qualsiasi richiesta, informazione o chiarimento in merito alla presente Informativa sulla Privacy, è possibile contattare lo sviluppatore all'indirizzo email ufficiale: <strong>velodent@hotmail.com</strong>.</p>
+        <h2>3. Requisiti di Sicurezza</h2>
+        <p>L'accesso ai servizi Google avviene tramite il protocollo sicuro OAuth 2.0. I token di accesso vengono salvati in modo cifrato all'interno del computer dell'utente e possono essere revocati in qualsiasi momento.</p>
 
-    <p><a href="index.html">← Torna alla home</a></p>
+        <h2>4. Diritti dell'utente e Revoca</h2>
+        <p>L'utente può interrompere il collegamento tra VeloDent e Google in qualsiasi momento tramite le impostazioni del software o visitando la pagina di gestione della sicurezza del proprio account Google:</p>
+        <p><a href="https://myaccount.google.com/permissions" target="_blank">Gestisci i permessi delle app (Google Account)</a></p>
+
+        <h2>5. Contatti</h2>
+        <p>Per qualsiasi domanda relativa alla presente informativa o al funzionamento del software, puoi contattarci all'indirizzo ufficiale:</p>
+        <p>Email: <strong>velodent@hotmail.com</strong><br>
+        Sito Web: <a href="https://www.velodent.eu">www.velodent.eu</a></p>
+
+        <footer>
+            <p>&copy; 2026 VeloDent - Gestione Professionale Odontoiatrica. <br>
+            <a href="index.html">Torna alla Home</a></p>
+        </footer>
+    </div>
 </body>
 </html>
